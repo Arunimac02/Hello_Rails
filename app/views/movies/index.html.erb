@@ -7,24 +7,24 @@
   <thead>
     <tr>
       <th>
-        <%= link_to 'Title', movies_path(sort: 'title', direction: toggle_direction('title')) %>
+        <%= link_to 'Title', movies_path(sort: 'title', direction: sorting_direction('title')) %>
         <span class="sort-indicator <%= 'sorted-asc' if @sort_column == 'title' && @sort_direction == 'asc' %>
                           <%= 'sorted-desc' if @sort_column == 'title' && @sort_direction == 'desc' %>">
-          <%= sorted_symbol('title') %>
+          <%= symbol_direction('title') %>
         </span>
       </th>
       <th>
-        <%= link_to 'Rating', movies_path(sort: 'rating', direction: toggle_direction('rating')) %>
+        <%= link_to 'Rating', movies_path(sort: 'rating', direction: sorting_direction('rating')) %>
         <span class="sort-indicator <%= 'sorted-asc' if @sort_column == 'rating' && @sort_direction == 'asc' %>
                           <%= 'sorted-desc' if @sort_column == 'rating' && @sort_direction == 'desc' %>">
-          <%= sorted_symbol('rating') %>
+          <%= symbol_direction('rating') %>
         </span>
       </th>
       <th>
-        <%= link_to 'Release Date', movies_path(sort: 'release_date', direction: toggle_direction('release_date')) %>
+        <%= link_to 'Release Date', movies_path(sort: 'release_date', direction: sorting_direction('release_date')) %>
         <span class="sort-indicator <%= 'sorted-asc' if @sort_column == 'release_date' && @sort_direction == 'asc' %>
                           <%= 'sorted-desc' if @sort_column == 'release_date' && @sort_direction == 'desc' %>">
-          <%= sorted_symbol('release_date') %>
+          <%= symbol_direction('release_date') %>
         </span>
       </th>
       <th>View</th>
@@ -48,4 +48,4 @@
 </table>
 
 
-<%= link_to "New movie", new_movie_path %>
+<%= link_to "Add New movie", new_movie_path %>
