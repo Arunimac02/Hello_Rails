@@ -8,3 +8,184 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+/* column headers */
+th a {
+    text-decoration: none;  
+    color: inherit;  
+    font-weight: bold;
+  }
+  
+  .sorted-asc {
+    color: green;
+  }
+  
+  .sorted-desc {
+    color: red;
+  }
+  
+  /* sort indicators */
+  .sort-indicator {
+    font-size: 1.2em;
+    margin-left: 5px;
+  }
+  
+  .sort-indicator.sorted-asc {
+    color: green;
+  }
+  
+  .sort-indicator.sorted-desc {
+    color: red;
+  }
+  
+  /*table */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: middle;
+  }
+  
+  th {
+    /*background-color: #f4f4f4;*/
+    background-color: #ADD8E6 ;
+    cursor: pointer; 
+  }
+  
+  tr {
+    background-color: #eec0c8;
+  }
+  
+  tr:hover {
+    background-color: #D8BFD8;
+  }
+  
+  /* Footer */
+  tfoot td {
+    font-weight: bold;
+  }
+  
+  /* links and buttons */
+  a {
+    color: #6F00FF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Page title*/
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+/* New Movie Page */
+.new-movie-page h1 {
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+  }
+  
+  .new-movie-page form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .new-movie-page form div {
+    margin-bottom: 10px;
+  }
+  
+  .new-movie-page form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  .new-movie-page form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .new-movie-page form input[type="submit"] {
+    background-color: pink;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+/* Edit Movie Page */
+.edit-movie-page h1 {
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+  }
+  
+  .edit-movie-page form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .edit-movie-page form div {
+    margin-bottom: 10px;
+  }
+  
+  .edit-movie-page form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  .edit-movie-page form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .edit-movie-page form input[type="submit"] {
+    background-color: pink;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Show movie page */
+  .show-movie-page h1 {
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+  }
+  /*table */
+  .show-movie-page table {
+    width: 100%;
+    border-collapse: separate;
+    margin-top: 20px;
+  }
+
+  /* links and buttons */
+  .show-movie-page a {
+    color: brown;
+    text-decoration: none;
+  }
+  .show-movie-page a:hover {
+    text-decoration: underline;
+  }

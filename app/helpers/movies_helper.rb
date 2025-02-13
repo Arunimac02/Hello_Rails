@@ -5,5 +5,14 @@ module MoviesHelper
         else
           'asc'
         end
-      end
+    end
+
+    def sorted_symbol(column)
+        if @sort_column == column
+          @sort_direction == 'asc' ? '↑' : '↓'
+        else
+          ''
+        end
+    end
+      
 end
